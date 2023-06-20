@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .input-control{
+        @apply bg-slate-600 text-slate-200 w-full rounded-md px-2 py-2 mt-2 mb-3 
+        focus:border-slate-100 focus:outline-none focus:ring focus:ring-slate-100;
+    }
+}
+div.hero{
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../priscilla-du-preez-nF8xhLMmg0c-unsplash.jpg");
+    /* background-image: url("../priscilla-du-preez-nF8xhLMmg0c-unsplash.jpg"); */
+    
+  
+    /* background-color: #cccccc; Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; 
+  background-color: rgba(0,0,0,0.5);
+}
+h1{
+    
+}
