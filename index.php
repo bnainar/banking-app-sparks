@@ -6,11 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Welcome to Banking app</title>
   <link rel="stylesheet" href="./styles/output.css" />
+  <style>
+    div.hero {
+      background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("./priscilla-du-preez-nF8xhLMmg0c-unsplash.jpg");
+      /* background-image: url("../priscilla-du-preez-nF8xhLMmg0c-unsplash.jpg"); */
+
+
+      /* background-color: #cccccc; Used if the image is unavailable */
+      height: 500px;
+      /* You must set a specified height */
+      background-position: center;
+      /* Center the image */
+      background-repeat: no-repeat;
+      /* Do not repeat the image */
+      background-size: cover;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  </style>
 </head>
 
 <body>
 
-  <div class="pt-24 p-10 m-auto hero h-50 md:px-24 md:py-32">
+  <div class="pt-24 p-10 m-auto hero h-50 md:px-24 md:py-32" style>
     <h1 class="text-5xl font-extrabold text-slate-100">Welcome to Banking app</h1>
     <p class="my-8 text-lg text-slate-200 max-w-lg">Safely send and receive money between customers with our user-friendly banking app. No login required for seamless transactions!</p>
     <a href="#services" class="block py-2 px-5 text-lg rounded-md font-semibold shadow-lg hover:shadow-xl w-56 text-center bg-purple-600 text-slate-200 hover:bg-purple-800">Checkout our services</a>

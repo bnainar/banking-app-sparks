@@ -12,7 +12,7 @@ $list = $res->fetch_all();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../styles/output.css" />
+    <link rel="stylesheet" href="../styles/output.css?" />
 </head>
 
 <body class="bg-slate-900">
@@ -31,7 +31,9 @@ $list = $res->fetch_all();
                 <?php foreach ($list as $i) : ?>
                     <tr class="bg-slate-700 even:bg-slate-800">
                         <td class="py-1"><?= $i[0] ?></td>
-                        <td><?= $i[1] ?></td>
+                        <td><a href="./details.php?id=<?= $i[0] ?>" class="underline font-semibold">
+                                <?= $i[1] ?></a>
+                        </td>
                         <td><?= $i[2] ?></td>
                         <td><?= $i[3] ?></td>
                     </tr>

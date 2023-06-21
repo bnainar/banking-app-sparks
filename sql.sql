@@ -1,7 +1,7 @@
 CREATE TABLE `banking_sparks`.`customers` (`id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(30) NOT NULL , `email` VARCHAR(30) NOT NULL , `balance` DECIMAL NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
 
-CREATE TABLE `banking_sparks`.`transactions` (`id` INT NOT NULL AUTO_INCREMENT , `sender_id` INT NOT NULL , `receiver_id` INT NOT NULL , `amount` DECIMAL NOT NULL , `timestamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) ENGINE = InnoDB;
-ALTER TABLE `customers` CHANGE `balance` `balance` DECIMAL(10,2) NOT NULL;
+CREATE TABLE `banking_sparks`.`transactions` (`id` INT NOT NULL AUTO_INCREMENT , `sender_id` INT NOT NULL , `receiver_id` INT NOT NULL , `amount` DECIMAL(10,2) NOT NULL , `timestamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
 
 INSERT INTO customers (name, email, balance)
 VALUES 
